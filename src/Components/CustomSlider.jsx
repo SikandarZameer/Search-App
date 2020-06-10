@@ -66,7 +66,7 @@ const CustomSlider = ({ label1, label2, points }) => {
       </Grid>
       <PrettoSlider
         valueLabelDisplay="auto"
-        defaultValue={50}
+        // defaultValue={80}
         value={value}
         onChange={(event, v) => {
           setValue(v);
