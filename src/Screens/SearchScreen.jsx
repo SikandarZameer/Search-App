@@ -4,6 +4,7 @@ import CustomSlider from "../Components/CustomSlider";
 import CustomButton from "../Components/CustomButton";
 import CustTextFields from "../Components/CustTextFields";
 import CustSelect from "../Components/CustSelect";
+import Box from "@material-ui/core/Box";
 
 const SearchScreen = () => {
   return (
@@ -21,7 +22,14 @@ const SearchScreen = () => {
         >
           <Grid item xs={12} style={{ height: "20vh" }} />
           <Grid item xs={12}>
-            <Typography> Search Doctor </Typography>
+            <Typography display="inline" variant="h3">
+              Search
+            </Typography>
+            <Typography display="inline" variant="h3">
+              <Box display="inline" fontWeight="fontWeightBold" m={1}>
+                Doctors
+              </Box>
+            </Typography>
           </Grid>
           <Grid item container xs={12} spacing={1}>
             <Grid item xs={6}>
