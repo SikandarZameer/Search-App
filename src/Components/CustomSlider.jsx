@@ -8,10 +8,10 @@ const useStyles = makeStyles(theme => ({
   root: {
     width: "auto",
     padding: 24
-  },
-  margin: {
-    height: theme.spacing(1)
   }
+  // margin: {
+  //   height: theme.spacing(1)
+  // }
 }));
 
 const PrettoSlider = withStyles({
@@ -58,10 +58,10 @@ const CustomSlider = ({ label1, label2, points }) => {
         alignItems="flex-start"
       >
         <Grid item>
-          <Typography>{label1}</Typography>
+          <Typography variant="subtitle2">{label1}</Typography>
         </Grid>
         <Grid item>
-          <Typography>{label2}</Typography>
+          <Typography variant="caption">{label2}</Typography>
         </Grid>
       </Grid>
       <PrettoSlider
