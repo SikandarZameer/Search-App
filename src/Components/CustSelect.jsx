@@ -11,6 +11,9 @@ const useStyles = makeStyles(theme => ({
     fullWidth: true,
     display: "flex",
     wrap: "nowrap"
+  },
+  select: {
+    borderRadius: `8px`
   }
 }));
 
@@ -31,6 +34,7 @@ const CustSelect = () => {
         <Select
           labelId="demo-simple-select-outlined-label"
           id="demo-simple-select-outlined"
+          className={classes.select}
           value={age}
           onChange={handleChange}
           label="Specialization"
